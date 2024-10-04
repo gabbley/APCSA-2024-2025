@@ -48,7 +48,8 @@ public class Lab1 {
     * Example: swapAB("oops", 1, 3) returns "ospo"
    */
    public static String swapAB(String word, int a, int b) {
-      return "";
+      String str = word.substring(0, a) + word.substring(b, b+1) + word.substring(a+1, b) + word.substring(a, a+1) + word.substring(b+1);
+      return str;
    }
    
    /* Call the swap method 3 times with 6 randomly generated
@@ -60,10 +61,18 @@ public class Lab1 {
       String updatedStr = word;
       
       // initialize all of the random number variables using Math.random()
-      
+      rand1 = (int) (Math.random() * updatedStr.length()-1);
+      rand2 = (int) (Math.random() * updatedStr.length()-1);
+      rand3 = (int) (Math.random() * updatedStr.length()-1);
+      rand4 = (int) (Math.random() * updatedStr.length()-1);
+      rand5 = (int) (Math.random() * updatedStr.length()-1);
+      rand6 = (int) (Math.random() * updatedStr.length()-1);
+      System.out.println(rand1);
+      System.out.println(rand2);
       updatedStr = swapAB(updatedStr, rand1, rand2);
-      updatedStr = swapAB(updatedStr, rand3, rand4);
-      updatedStr = swapAB(updatedStr, rand5, rand6);
+      System.out.println(updatedStr);
+      updatedStr = swapAB(word, rand3, rand4);
+      updatedStr = swapAB(word, rand5, rand6);
       
       return updatedStr;
    }
