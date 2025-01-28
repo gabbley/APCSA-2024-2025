@@ -21,7 +21,7 @@ public class DynamicStringArray {
 
     // Method to double the array size when full
     private void resize() {
-      // TODO
+      // TOD
     }
 
     // Method to print all elements

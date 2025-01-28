@@ -27,7 +27,7 @@ public class DynamicStringArrayList {
         System.out.println("Enter names (type 'q' to quit):");
 
         while (true) {
-            String input = scanner.nextLine();
+            String input = sanner.nextLine();
             if (input.equalsIgnoreCase("q")) {
                 break;
             }
