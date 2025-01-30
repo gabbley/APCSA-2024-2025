@@ -19,6 +19,7 @@ public class Theater {
    public Theater(String nm) {
       name = nm;
       collection = new ArrayList<Movie>();
+      loadMovies();
    }
 
    /**
