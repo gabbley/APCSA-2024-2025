@@ -27,5 +27,23 @@ public class Sorts {
          elements[possibleIndex] = temp;
       }
    }
+   
+   public static void print(int[] arr) {;
+      for (int i : arr) {
+         System.out.print(i + " ");
+      }
+      System.out.println();
+   }
+
+   public static void main(String[] args) {
+      int[] arr1 = {13, 6, 2, 0, 6, 21, -1};
+      selectionSort(arr1);
+      print(arr1);
+      
+      int[] arr2 = {44, 1, 0, 1, 16, 61, 21};
+      insertionSort(arr2);
+      print(arr2);
+   }
+
 }
 
