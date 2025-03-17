@@ -1,13 +1,16 @@
 public class Performer {
    
-   private String name, hometown, agent;
+   private String name;
    private int age;
    
    public Performer() {
-      name = "";
-      hometown = "";
-      agent = "";
-      age = 0;
+      name = "Default Performer";
+      age = 18;
+   }
+   
+   public Performer(String n, int a) {
+      name = n;
+      age = a;
    }
    
    public String getName() {

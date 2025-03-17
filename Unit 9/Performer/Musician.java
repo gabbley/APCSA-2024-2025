@@ -2,7 +2,11 @@ public class Musician extends Performer {
    private String instrument;
    
    public Musician() {
-      super();
+      instrument = "Piano";
+   }
+   
+   public Musician(String inst) {
+      instrument = inst;
    }
    
    public String getInstrument() {
